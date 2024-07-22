@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy-ExtraBold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 225, 255);
+}
+
+#page1 #nav{
+    height: 7vw;
+    width: 100%;
+    background-color: rgb(144, 255, 212);
+}
+
+#navPart1{
+    width: 30%;
+}
+
+#page1 #nav img{
+    height: 3vw;
+}
+
+#navPart2{
+    width: 30%;
+}
+
+#content{
+    height: calc(100% - 7vw);
+    width: 100%;
+    background-color: red;
+}
