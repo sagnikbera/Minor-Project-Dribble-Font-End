@@ -105,7 +105,7 @@ html, body{
     line-height: 4vw;
 }
 
-#content h4{
+#content #h4{
     background-color: #f5eb96;
     width: fit-content;
     padding: 0.2vw 2vw;
@@ -172,6 +172,7 @@ html, body{
     border-radius: 30px;
     margin-right: 1vw;
     overflow: hidden;
+    position: relative;
 }
 
 .elem img{
@@ -186,5 +187,30 @@ html, body{
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.elem .text-bottom{
+    height: 25%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    /* background-color: black; */
+    color: wheat;
+}
+
+.elem h4{
+    margin-left: 1vw;
+    font-size: 1vw;
+}
+
+.tag{
+    display: flex;
+}
+.elem h5{
+    padding: 0vw 0.5vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    border: 1px solid white;
+    border-radius: 20px
 }
 
