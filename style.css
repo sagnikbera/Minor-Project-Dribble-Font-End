@@ -131,17 +131,20 @@ html, body{
     margin-bottom: 1vw;
 }
 
+#MOVE{
+    width: 200%;
+    display: flex;
+}
+
 #bottom{
     width: 100%;
     height:22vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    /* display: flex;
+    display: flex;
     flex-wrap: nowrap;
     gap: 1vw;
-    overflow-x: auto;
-    overflow-y: hidden; */
-    white-space: nowrap; /*p2*/
+    /* white-space: nowrap; p2 */
     overflow-x: auto;
     overflow-y: hidden;
     animation-name: anime;
@@ -152,10 +155,10 @@ html, body{
 
 @keyframes anime {
     from{
-        transform: translate(0);
+        transform: translateX(0);
     }
     to{
-        transform: translate(-100%);
+        transform: translateX(-100%);
     }
 }
 
@@ -164,8 +167,8 @@ html, body{
 }
 
 .elem{
-    /* flex-shrink: 0; */
-    display: inline-block; /*p2*/
+    flex-shrink: 0;
+    /* display: inline-block; p2 */
     height: 100%;
     width: 18vw;
     background-color: burlywood;
@@ -214,3 +217,74 @@ html, body{
     border-radius: 20px
 }
 
+
+#page2{
+    height: 100%;
+    width: 100%;
+    /* background-color: wheat; */
+    padding: 0vw 1vw;
+}
+
+#explore{
+    margin-top: 12vw;
+}
+
+#explore h1{
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 3vw;
+    font-weight: 200;
+    margin-bottom: 1vw;
+}
+
+.box{
+    height: 18vw;
+    width: 22vw;
+    /* background-color: red; */
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 1vw;
+    position: relative;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-btm{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient( transparent, rgb(0, 0, 0));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0vw 2vw;
+}
+
+.box:hover .box-btm{
+    bottom: 0;
+}
+
+.box-btm h6{
+    font-size: 1vw;
+}
+
+.box-btm i{
+    font-size: 1vw;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+    padding: 0.8vw;
+    border-radius: 50%;
+}
+
+.box:hover{
+    box-shadow: 0px 5px 20px black;
+}
